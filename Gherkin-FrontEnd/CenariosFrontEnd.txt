@@ -1,0 +1,45 @@
+Cenário 01: Cadastrar novo usuário
+Dado que o usuário tenha acessado o aplicativo
+Quando ele clicar no botao com o simbolo de + na tela
+E clicar na opcao Cadastrar novo
+E informar o nome "Thales Fabio"
+E informar o RG "370960749"
+E informar o CPF "76623310916"
+E informar a data de nascimento "11/04/2002"
+E informar o endereço "Rua Jardim Bonito"
+E informar o numero "555"
+E informar o bairro "Jardim Centro Oeste"
+E informar o cep "79073185"
+E informar a cidade "Campo Grande"
+E selecionar o estado "MS"
+E informar o telefone "6728197555"
+E informar o email "thales-barbosa93@tokiomarine.com.br"
+E clicar no botão Salvar
+Então deve ser exibido a mensagem "Cadastro efetuado com sucesso"
+
+Cenário 02: Opções de Cadastro
+Dado que o usuário tenha acessado o aplicativo
+Quando o usuario clicar no botão com o simbolo de + na tela
+E clicar na opção Cadastrar novo
+Então deve ser exibido as opções "Básico" e "Completo"
+
+Cenário 03: Excluir Cliente
+Dado que o usuário tenha clientes cadastrados no aplicativo
+Quando acessar o aplicativo
+E na tela inicial clicar em um cliente 
+E clicar no botão Excluir
+E confirmar a exclusão do cliente
+Então ele não deve mais ser exibido na tela inicial do aplicativo
+
+Cenário 04: Validar botão Enviar
+Dado que o usuário tenha clientes cadastrados sem email no aplicativo
+Quando acessar o aplicativo
+E na tela inicial clicar em um cliente 
+E clicar no botão Enviar
+Então deve ser exibido uma exclamação vermelha e a mensagem "Insira o e-mail"
+
+Cenário 05: Validar campo CPF
+Dado que o usuário tenha acessado o aplicativo
+Quando ele clicar no botao com o simbolo de + na tela
+E clicar na opcao Cadastrar novo
+Então ele não é capaz de inserir letras no campo CPF

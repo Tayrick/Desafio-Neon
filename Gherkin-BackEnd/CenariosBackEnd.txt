@@ -1,12 +1,4 @@
-
-1 - Criar usuário com sucesso
-2 - Consultar usuário criado
-3 - Alterar cadastro do usuário criado
-4 - Deletar usuário criado
-5 - Consultar usuário deletado
-
-
-1)
+Cenário 01
 Quando enviar uma requisição POST para a URL https://dummy.restapiexample.com/api/v1/create
 E informar o Body com os valores <name> <salary> <age>
 |name||salary||age|
@@ -15,7 +7,7 @@ Entao a API deve retornar código Http 200
 E o atributo data no responseBody não deve estar vazio
 
 
-2)
+Cenário 02
 Quando enviar um requisição GET para a URL https://dummy.restapiexample.com/api/v1/employee/10
 Entao a API deve retornar código Http 200
 E o atributo data no responseBody deve conter <id> <employee_name> <employee_salary> <employee_age>
@@ -23,7 +15,7 @@ E o atributo data no responseBody deve conter <id> <employee_name> <employee_sal
  |10| |Sonya Frost  | |103600         | |23          |
  
  
-3)
+Cenário 03
 Quando enviar uma requisição PUT para a URL https://dummy.restapiexample.com/api/v1/update/12
 E informar o Body com os valores <name> <salary> <age>
 |name||salary||age|
@@ -32,13 +24,13 @@ Entao a API deve retornar código Http 200
 E o atributo message no responseBody deve conter o texto "Successfully! Record has been updated."
 
 
-4)
+Cenário 04
 Quando enviar uma requisição DELETE para a URL https://dummy.restapiexample.com/api/v1/delete/9
 Entao a API deve retornar código Http 200
 E o atributo message no responseBody deve conter o texto "Successfully! Record has been deleted"
 
 
-5)
+Cenário 05
 Quando enviar uma requisição GET para a URL https://dummy.restapiexample.com/api/v1/delete/5
 Entao a API deve retornar código Http 404 Not Found
 E o atributo message no responseBody deve conter o texto "Error Occured! Page Not found, contact rstapi2example@gmail.com"
