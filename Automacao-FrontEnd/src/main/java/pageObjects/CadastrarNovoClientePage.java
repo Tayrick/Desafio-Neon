@@ -139,7 +139,6 @@ public class CadastrarNovoClientePage {
 	}
 
 	public void validarOpcoesCadastro(String basico, String completo) {
-		driver.navigate().back();
 		assertEquals(basico, optionBasico.getText());
 		assertEquals(completo, optionCompleto.getText());
 	}
