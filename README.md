@@ -19,6 +19,7 @@ Para a execução do projeto é necessário ter instalado no computador os segui
 * JDK 11
 * Android Studio
 * Appium Server Gui
+
 Após instalar o JDK 11 e configurar a IDE, necessário configurar o Android Studio para executar o emulador Android. 
 Com o emulador executando, será necessário instalar o aplicativo utilizado no projeto.
 
