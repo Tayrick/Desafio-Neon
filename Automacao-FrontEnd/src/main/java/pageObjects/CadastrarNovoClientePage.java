@@ -117,7 +117,7 @@ public class CadastrarNovoClientePage {
 		abrirSelect.click();
 		Utils.scrollPage();
 		MobileElement selectEstado = (MobileElement) driver
-				.findElement(MobileBy.xpath("//android.widget.TextView[@text='MS']"));
+				.findElement(MobileBy.xpath("//android.widget.TextView[@text='"+estado+"']"));
 		selectEstado.click();
 
 	}
